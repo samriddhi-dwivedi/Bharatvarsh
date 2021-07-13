@@ -211,7 +211,7 @@ if (isset($_SESSION['email'])) {
       <div id="home" style="opacity: 0.75;" class="jumb container mt-0 headingg">
 
         <h1 class="text-center amita ml6 "><span class="text-wrapper">
-            <span class="letters">Explore sanskar The Beauty &nbsp; Of &nbsp;Bharatvarsh </span>
+            <span class="letters">Explore The Beauty &nbsp; Of &nbsp;Bharatvarsh </span>
           </span></h1>
 
       </div>
