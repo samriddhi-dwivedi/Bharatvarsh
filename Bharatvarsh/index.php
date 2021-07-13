@@ -136,7 +136,7 @@ if (isset($_SESSION['email'])) {
 
   <header style="overflow-y: hidden;">
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="overflow-y: hidden;">
-      <a class="navbar-brand ml-1" href="#s1">BHARATVARSH</a>
+      <a class="navbar-brand ml-1" href="#s1" style="margin-left: 15px !important;">BHARATVARSH</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -221,7 +221,7 @@ if (isset($_SESSION['email'])) {
 
         <div class="col-lg-3 col-6 d-flex justify-content-center pb-3 pb-lg-0 ppl">
           <div class="card mainsec">
-            <img class="card-img-top" src="./assests/people.jpg" alt="Card image cap" height="250px">
+            <img class="card-img-top categ" src="./assests/people.jpg" alt="Card image cap" height="250px">
             <div class="card-body">
               <a href="category.php?class=people">
                 <h5 class="card-text">People</h5>
@@ -232,7 +232,7 @@ if (isset($_SESSION['email'])) {
 
         <div class="col-lg-3 col-6 d-flex justify-content-center plc">
           <div class="card mainsec">
-            <img class="card-img-top" src="./assests/places.jpg" alt="Card image cap" height="250px">
+            <img class="card-img-top categ" src="./assests/places.jpg" alt="Card image cap" height="250px">
             <div class="card-body">
               <a href="category.php?class=places">
                 <h5 class="card-text">Places</h5>
@@ -242,7 +242,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <div class="col-lg-3 col-6 d-flex justify-content-center foo">
           <div class="card mainsec">
-            <img class="card-img-top" src="./assests/food.jpg" alt="Card image cap" height="250px">
+            <img class="card-img-top categ" src="./assests/food.jpg" alt="Card image cap" height="250px">
             <div class="card-body">
               <a href="category.php?class=food">
                 <h5 class="card-text">Food</h5>
@@ -252,7 +252,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <div class="col-lg-3 col-6 d-flex justify-content-center pb-3 pb-lg-0 ins">
           <div class="card mainsec">
-            <img class="card-img-top" src="./assests/insights.jpg" alt="Card image cap" height="250px">
+            <img class="card-img-top categ" src="./assests/insights.jpg" alt="Card image cap" height="250px">
             <div class="card-body">
               <a href="category.php?class=insights">
                 <h5 class="card-text">Insights</h5>
@@ -279,15 +279,16 @@ if (isset($_SESSION['email'])) {
       </div>
 
     </div>
-
+    <h2 id="s3"></h2>
 
   </section>
 
 
 
 
-  <h2 id="s3"></h2><br>
-  <section class="contain2 mt-5" id="latest">
+
+  <section class="contain2 mt-5 lu" id="latest">
+
 
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">Latest Updates <i class="fi-cnlrxm-chevron-solid"></i></h3>
     <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);overflow-y:hidden;">
@@ -366,12 +367,13 @@ if (isset($_SESSION['email'])) {
 
       </div>
     </div>
+    <h2 id="s4"></h2>
   </section>
 
 
 
-  <h2 id="s4"></h2><br>
-  <section class="contain2 mt-5" id="popular">
+
+  <section class="contain2 mt-5 mp" id="popular">
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">Most Popular <i class="fi-cnlrxm-chevron-solid"></i></h3>
     <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
       <div class="container-fluid pt-5 pb-5" style="overflow-y: hidden;">

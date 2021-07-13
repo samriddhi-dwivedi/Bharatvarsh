@@ -57,7 +57,7 @@ while ($rows = mysqli_fetch_assoc($result)) {
 <body>
     <header style="overflow-y: hidden;">
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="overflow-y: hidden;">
-            <a class="navbar-brand ml-1" href="#s1">BHARATVARSH</a>
+            <a class="navbar-brand ml-1" href="#s1" style="margin-left: 15px !important;">BHARATVARSH</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -161,7 +161,7 @@ while ($rows = mysqli_fetch_assoc($result)) {
                     <div class="col-xl-12 col-md-12" style="overflow-y: hidden;">
                         <div class="cards user-card-full" style="overflow-y: hidden;">
                             <div class="row m-l-0 m-r-0 adj" style="height: 400px;overflow-y:hidden;">
-                                <div class="col-sm-4 user-profile">
+                                <div class="col-sm-4 user-profile" style="background-color:rgba(233, 173, 120, 0.3);">
                                     <div class="card-block text-center text-white">
                                         <div class="m-b-25" style="margin-top: 60px;">
 
@@ -187,29 +187,29 @@ while ($rows = mysqli_fetch_assoc($result)) {
                                         <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                     </div>
                                 </div>
-                                <div class="col-sm-8 back" style="overflow-y: hidden;">
-                                    <div class="card-block" style="margin-top: 60px;overflow-y: hidden;">
-                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600" style="font-size: 25px;">Information</h6>
+                                <div class="col-sm-8 back" style="overflow-y: hidden;background-color:rgba(233, 173, 120, 0.46);">
+                                    <div class="card-block" style="margin-top: 60px;overflow-y: hidden;text-align:center;">
+                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600" style="font-size: 35px;text-align:center;color:#511616;">Information</h6>
                                         <div class="row" style="margin-top: 50px;overflow-y: hidden;">
                                             <div class="col-sm-6 nm">
-                                                <p class="m-b-10 f-w-600">Name<img src="./assests/id-card.png" style="height:35px;
+                                                <p class="m-b-10 f-w-600 head" style="color:#511616;">Name<img src=" ./assests/id-card.png" style="height:35px;
                                         width:30px; margin-left:20px;margin-top: -10px;"></p>
                                                 <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $user . '</h6>'; ?>
                                             </div>
                                             <div class="col-sm-6 nm1">
-                                                <p class="m-b-10 f-w-600">Email<img src="./assests/email.png" style="height:25px;width:30px; margin-left:20px;margin-top: 0px;"></p>
+                                                <p class="m-b-10 f-w-600 head" style="color:#511616;">Email<img src="./assests/email.png" style="height:25px;width:30px; margin-left:20px;margin-top: 0px;"></p>
                                                 <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $email . '</h6>'; ?>
                                             </div>
-                                        </div>
+                                        </div><br>
 
                                         <div class="row" style="overflow-y: hidden;">
                                             <div class="col-sm-6 nm2">
-                                                <p class="m-b-10 f-w-600">UserName<img src="./assests/atr.png" style="height:25px;padding-top:1px;
+                                                <p class="m-b-10 f-w-600 head" style="color:#511616;">UserName<img src="./assests/atr.png" style="height:25px;padding-top:1px;
                                         width:30px; margin-left:10px;margin-top: 3px;"></p>
                                                 <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $username . '</h6>'; ?>
                                             </div>
                                             <div class="col-sm-6 nm3" style="overflow-y: hidden;">
-                                                <p class="m-b-10 f-w-600">Blogs Written <img src="./assests/save-button.png" style="height:25px;padding-top:1px;
+                                                <p class="m-b-10 f-w-600 head" style="color:#511616;">Blogs Written <img src="./assests/save-button.png" style="height:25px;padding-top:1px;
                                         width:30px; margin-left:10px;margin-top: 5px;"></p>
                                                 <h6 class="text-muted f-w-400">
                                                     <?php

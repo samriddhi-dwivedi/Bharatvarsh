@@ -184,6 +184,23 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .cd{
+    margin-top: -55px !important;
+    margin-left: -20px !important;
+  }
+  .uas{
+   height: 60px !important;
+   margin-left: -10px !important;
+   margin-top: 10px !important;
+  }
+ 
+  .c{
+    margin-left: 70px !important;
+  }
+  .t{
+    margin-left: 70px !important;
+  }
   input[type="submit"] {
     margin-left: 20px !important;
   }
@@ -450,6 +467,13 @@ section {
   margin-top: 2%;
   background-color: rgba(233, 173, 120, 0.46);
   padding-left: 1.5%;
+}
+
+@media only screen and (min-width: 1020px) {
+  .inp {
+    background-color: white !important;
+    margin-left: 175px !important;
+  }
 }
 
 .inp {

@@ -152,7 +152,7 @@ $user = $row['user'];
   </header>
 
   <section class="mainsection">
-    <h1 class="display-3 text-center ml6" style="padding-top: 13vw; font-weight:400;"><span class="text-wrapper">
+    <h1 class="display-3 text-center ml6" style="padding-top: 5vw; font-weight:400;"><span class="text-wrapper">
         <span class="letters"><?php echo $title ?></span>
       </span></h1>
     <div class="row pt-5">
@@ -300,11 +300,11 @@ $user = $row['user'];
             <div class="col-lg-1 user-avatar">
               <?php
               if ($pass) { ?>
-                <img src="uploads/<?php echo $image; ?>" width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq" fill="currentColor" />
+                <img src="uploads/<?php echo $image; ?>" width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq uas" fill="currentColor" />
               <?php } else {
                 $im = $image;
                 $imageData = base64_encode(file_get_contents($im));
-                echo '<img src="data:image/jpeg;base64,' . $imageData . '"  width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq" fill="currentColor" >';
+                echo '<img src="data:image/jpeg;base64,' . $imageData . '"  width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq uas" fill="currentColor" >';
               }
               ?>
             </div>
@@ -521,18 +521,18 @@ $user = $row['user'];
               <div class="col-lg-1 user-avatar">
                 <?php
                 if ($pass) { ?>
-                  <img src="uploads/<?php echo $image; ?>" width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq" fill="currentColor" />
+                  <img src="uploads/<?php echo $image; ?>" width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq uas" fill="currentColor" />
                 <?php } else {
                   $im = $image;
                   $imageData = base64_encode(file_get_contents($im));
-                  echo '<img src="data:image/jpeg;base64,' . $imageData . '"  width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq" fill="currentColor" >';
+                  echo '<img src="data:image/jpeg;base64,' . $imageData . '"  width="80px" viewBox="0 0 16 16" class="bi bi-person-square commsq uas" fill="currentColor" >';
                 }
                 ?>
               </div>
-              <div class="col-lg-9 comment-details">
-                <h4 class="username"><?php echo $name; ?></h4>
-                <p class="comment"><?php echo $comment; ?></p>
-                <span class="time"><?php echo $date; ?></span>
+              <div class="col-lg-9 comment-details cd">
+                <h4 class="username us"><?php echo $name; ?></h4>
+                <p class="comment c"><?php echo $comment; ?></p>
+                <span class="time t"><?php echo $date; ?></span>
               </div>
             </div>
           </div>

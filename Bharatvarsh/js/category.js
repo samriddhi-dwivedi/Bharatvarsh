@@ -1,35 +1,26 @@
-// Wrap every letter in a span
-
-var textWrapper = document.querySelector(".ml6 .letters");
-textWrapper.innerHTML = textWrapper.textContent.replace(
-  /\S/g,
-  "<span class='letter'>$&</span>"
-);
-
-anime
-  .timeline({ loop: true })
-  .add({
-    targets: ".ml6 .letter",
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 1000,
-    delay: (el, i) => 50 * i,
-  })
-  .add({
-    targets: ".ml6",
-    opacity: 0,
-    duration: 0,
-    easing: "easeOutExpo",
-    delay: 1000,
-  });
 
 var animate = ScrollReveal();
+
+animate.reveal(".ml6", {
+  delay: 0,
+  origin: "top",
+  duration: 1500,
+  distance: "100px",
+});
+
 
 animate.reveal(".author", {
   delay: 0,
   origin: "left",
   duration: 1500,
   distance: "100px",
+});
+
+animate.reveal(".imgg", {
+  delay: 0,
+  origin: "top",
+  duration: 1500,
+  distance: "300px",
 });
 
 animate.reveal(".read", {
@@ -39,12 +30,7 @@ animate.reveal(".read", {
   distance: "100px",
 });
 
-ScrollReveal().reveal(".imgg", {
-  rotate: {
-    x: 500,
-    z: 500,
-  },
-});
+ 
 
 animate.reveal(".conntt", {
   delay: 0,

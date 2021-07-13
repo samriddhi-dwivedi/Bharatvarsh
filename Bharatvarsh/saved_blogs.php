@@ -115,21 +115,18 @@ if (empty($_SESSION['user_id'])) {
     </nav>
   </header>
 
-  <section class="container-fluid cov" style="
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, #fff1e5 100%),
-            url('./assests/KeyPicture.png') no-repeat; background-size: cover; margin-top: 65px; border-radius: 20px;">
+  <section class="container-fluid cov sbcov">
 
-
-    <div style=" padding-top:130px;overflow-y: hidden;">
+    <div style=" padding-top:130px;overflow-y: hidden;" class="sb">
       <div id="home" style="opacity: 0.75;" class="jumb container mt-0">
 
-        <h1 class="text-center amita ml6"><span class="text-wrapper">
+        <h1 class="text-center amita"><span class="text-wrapper">
             <span class="letters">Saved Blogs</span>
           </span></h1>
 
       </div>
     </div>
-    <div style="padding-top: 2vw;">
+    <div style="padding-top: 2vw;" class="his">
       <div id="history" style="opacity: 0.75;" class="jumb container mt-0">
         <div class="row mt-0">
           <div class="col-1"></div>
@@ -151,7 +148,7 @@ if (empty($_SESSION['user_id'])) {
   <section class="contain2 mt-5" id="latest">
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold; font-family: 'Texturina', serif;">All Articles<i class="fi-cnlrxm-chevron-solid"></i></h3>
     <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
-      <div class="container pt-5 pb-4">
+      <div class="container pt-5 pb-4 allarticles">
         <div class="row">
 
           <?php

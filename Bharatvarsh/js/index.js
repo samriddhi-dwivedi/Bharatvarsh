@@ -1,29 +1,15 @@
-// Wrap every letter in a span
-
-var textWrapper = document.querySelector(".ml6 .letters");
-textWrapper.innerHTML = textWrapper.textContent.replace(
-  /\S/g,
-  "<span class='letter'>$&</span>"
-);
-
-anime
-  .timeline({ loop: true })
-  .add({
-    targets: ".ml6 .letter",
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 1000,
-    delay: (el, i) => 50 * i,
-  })
-  .add({
-    targets: ".ml6",
-    opacity: 0,
-    duration: 0,
-    easing: "easeOutExpo",
-    delay: 1000,
-  });
-//animate
+ 
 var animate = ScrollReveal();
+
+ 
+
+animate.reveal(".ml6", {
+  delay: 1000,
+  origin: "bottom",
+  duration: 1500,
+  distance: "100px",
+});
+
 
 animate.reveal(".ppl", {
   delay: 1000,
@@ -38,8 +24,9 @@ animate.reveal(".plc", {
   duration: 1500,
   distance: "100px",
 });
-
+ 
 animate.reveal(".foo", {
+  mobile:false,
   delay: 1400,
   origin: "left",
   duration: 1500,
@@ -47,11 +34,34 @@ animate.reveal(".foo", {
 });
 
 animate.reveal(".ins", {
+  mobile:false,
   delay: 1600,
   origin: "left",
   duration: 1500,
   distance: "100px",
 });
+
+animate.reveal(".foo", {
+  desktop:false,
+  delay: 0,
+  origin: "left",
+  duration: 1500,
+  distance: "100px",
+});
+ 
+
+animate.reveal(".ins", {
+  desktop:false,
+  delay: 0,
+  origin: "left",
+  duration: 1500,
+  distance: "100px",
+});
+
+ 
+
+
+
 
 animate.reveal(".pl-md-5", {
   delay: 0,

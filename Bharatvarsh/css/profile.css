@@ -65,6 +65,10 @@
   padding: 20px 0;
 }
 
+.head{
+  font-size: 25px;
+}
+
 .card-block {
   padding: 1.25rem;
 }
