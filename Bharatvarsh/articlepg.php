@@ -17,7 +17,6 @@ while ($row = mysqli_fetch_assoc($result)) {
   $content = $row['content'];
   $image = $row['image'];
   $likes = $row['likes'];
-  $dislikes = $row['dislikes'];
   $date = $row['date'];
 }
 
@@ -41,6 +40,7 @@ $user = $row['user'];
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/articlepg.css">
+
 
 
   <!-- Slick -->
@@ -177,7 +177,7 @@ $user = $row['user'];
     <div class="row mt-5 conntt">
       <div class="col-lg-2 col-1"></div>
       <div class="col-lg-8 col-10 d-flex justify-content-center">
-        <p class="text-justify" style="font-size: 1.25rem;"><?php echo nl2br($content) . "\n"; ?>
+        <p class="text-justify" style="font-size: 1.2rem;"><?php echo nl2br($content) . "\n"; ?>
 
         </p>
         <hr>
@@ -295,6 +295,8 @@ $user = $row['user'];
           $pass = $row1['password'];
         }
       ?>
+
+
         <div class="container comment-tab">
           <div class="row">
             <div class="col-lg-1 user-avatar">
@@ -308,13 +310,15 @@ $user = $row['user'];
               }
               ?>
             </div>
-            <div class="col-lg-9 comment-details">
-              <h4 class="username"><?php echo $name; ?></h4>
-              <p class="comment"><?php echo $comment; ?></p>
-              <span class="time"><?php echo $date; ?></span>
+            <div class="col-lg-9 comment-details cd">
+              <h4 class="username us"><?php echo $name; ?></h4>
+              <p class="comment c"><?php echo $comment; ?></p>
+              <span class="time t"><?php echo $date; ?></span>
             </div>
           </div>
         </div>
+
+
       <?php
 
 
@@ -330,12 +334,7 @@ $user = $row['user'];
 
     <br>
 
-
-
-
-
-
-    <!--Adding condition, that if the admin sees the post for approval he doesn't see the like comment and save buttons -->
+    <!--Adding Like,Comment section when LOGGED IN and user is NOT admin  -->
     <?php
     if (isset($_SESSION['user_id'])) {
       if ($_SESSION['username'] != 'admin') {
@@ -383,7 +382,7 @@ $user = $row['user'];
               <!-- LIKE COUNT BUTTON -->
 
               <div class="dislikebutton">
-                <div> Likes :
+                <div>Likes :
                   <?php
 
                   $sql = "SELECT likes FROM posts WHERE post_id={$p_id}";
@@ -469,7 +468,7 @@ $user = $row['user'];
 
             </div>
             <div class="col-lg-9 comment-details uss">
-              <h4 class="username"><?php echo $_SESSION['user']; ?></h4>
+
 
               <form action="./comment.php?id=<?php echo $p_id; ?>" method="post">
 
@@ -600,7 +599,7 @@ $user = $row['user'];
   <section class="contain2 mt-5" id="latest">
 
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">Related <i class="fi-cnlrxm-chevron-solid"></i></h3>
-    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);overflow-y:hidden;">
+    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);overflow-y:hidden;box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
       <div class="container pt-5 pb-5" style="overflow-y: hidden;">
 
         <i class="fas fa-chevron-left pre"></i>

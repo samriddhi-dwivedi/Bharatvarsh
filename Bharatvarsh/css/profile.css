@@ -6,7 +6,16 @@
   background-size: cover;
 }
 
+
+
+.user-card-full {
+  border-radius: 50px !important;
+}
+
 @media only screen and (max-width: 600px) {
+  .user-card-full {
+    border-radius: 10px !important;
+  }
   .page-container {
     width: 440px;
     margin-left: -40px !important;
@@ -15,11 +24,6 @@
     height: auto !important;
   }
 }
-
-.user-card-full {
-  border-radius: 50px !important;
-}
-
 .padding {
   padding: 3rem !important;
 }
@@ -65,6 +69,9 @@
   padding: 20px 0;
 }
 
+.nm3{
+  margin-top: 4px ;
+}
 .head{
   font-size: 25px;
 }

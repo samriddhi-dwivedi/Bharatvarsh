@@ -334,7 +334,7 @@ $class = $_GET['class'];
 
   <section class="contain2 mt-5" id="latest">
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold; font-family: 'Texturina', serif;">All Articles<i class="fi-cnlrxm-chevron-solid"></i></h3>
-    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
+    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
       <div class="container pt-5 pb-4 ccc">
         <div class="row ">
 

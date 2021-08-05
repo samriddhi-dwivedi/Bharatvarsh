@@ -1,43 +1,43 @@
 
 var animate = ScrollReveal();
 
-animate.reveal(".ml6", {
-  delay: 0,
-  origin: "top",
-  duration: 1500,
-  distance: "100px",
-});
+// animate.reveal(".ml6", {
+//   delay: 0,
+//   origin: "top",
+//   duration: 1500,
+//   distance: "100px",
+// });
 
 
-animate.reveal(".author", {
-  delay: 0,
-  origin: "left",
-  duration: 1500,
-  distance: "100px",
-});
+// animate.reveal(".author", {
+//   delay: 0,
+//   origin: "left",
+//   duration: 1500,
+//   distance: "100px",
+// });
 
-animate.reveal(".imgg", {
-  delay: 0,
-  origin: "top",
-  duration: 1500,
-  distance: "300px",
-});
+// animate.reveal(".imgg", {
+//   delay: 0,
+//   origin: "top",
+//   duration: 1500,
+//   distance: "300px",
+// });
 
-animate.reveal(".read", {
-  delay: 0,
-  origin: "right",
-  duration: 1500,
-  distance: "100px",
-});
+// animate.reveal(".read", {
+//   delay: 0,
+//   origin: "right",
+//   duration: 1500,
+//   distance: "100px",
+// });
 
  
 
-animate.reveal(".conntt", {
-  delay: 0,
-  origin: "left",
-  duration: 2500,
-  distance: "100px",
-});
+// animate.reveal(".conntt", {
+//   delay: 0,
+//   origin: "left",
+//   duration: 2500,
+//   distance: "100px",
+// });
 
 animate.reveal(".lcs", {
   delay: 0,
@@ -46,12 +46,12 @@ animate.reveal(".lcs", {
   distance: "100px",
 });
 
-animate.reveal(".comment-tab", {
-  delay: 0,
-  origin: "left",
-  duration: 2500,
-  distance: "1000px",
-});
+// animate.reveal(".comment-tab", {
+//   delay: 0,
+//   origin: "left",
+//   duration: 2500,
+//   distance: "1000px",
+// });
 
 //profile
 
@@ -93,6 +93,49 @@ animate.reveal(".nm2", {
 
 animate.reveal(".nm3", {
   delay: 3500,
+  origin: "bottom",
+  duration: 1500,
+  distance: "100px",
+});
+
+
+animate.reveal(".m-b-20", {
+  desktop:false,
+  mobile:true,
+  delay: 0,
+});
+
+animate.reveal(".nm", {
+  desktop:false,
+  mobile:true,
+  delay: 0,
+  origin: "top",
+  duration: 1500,
+  distance: "100px",
+});
+
+animate.reveal(".nm1", {
+  desktop:false,
+  mobile:true,
+  delay: 0,
+  origin: "right",
+  duration: 1500,
+  distance: "100px",
+});
+
+animate.reveal(".nm2", {
+  desktop:false,
+  mobile:true,
+  delay: 0,
+  origin: "left",
+  duration: 1500,
+  distance: "100px",
+});
+
+animate.reveal(".nm3", {
+  desktop:false,
+  mobile:true,
+  delay: 0,
   origin: "bottom",
   duration: 1500,
   distance: "100px",

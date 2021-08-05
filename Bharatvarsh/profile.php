@@ -125,25 +125,26 @@ while ($rows = mysqli_fetch_assoc($result)) {
         </nav>
     </header>
 
-    <section class="contain kkll cov">
-        <div style="padding-top:130px;overflow-y: hidden;">
+    <section class="container-fluid cov sbcov">
+
+        <div style=" padding-top:130px;overflow-y: hidden;" class="sb">
             <div id="home" style="opacity: 0.75;" class="jumb container mt-0">
 
-                <h1 class="text-center amita ml6"><span class="text-wrapper">
+                <h1 class="text-center" style="font-weight: bold; font-family: 'Texturina', serif;color:#511616;"><span class="text-wrapper">
                         <span class="letters">Profile</span>
                     </span></h1>
 
             </div>
         </div>
-        <div style="padding-top: 2vw;">
+        <div style="padding-top: 2vw;" class="his">
             <div id="history" style="opacity: 0.75;" class="jumb container mt-0">
                 <div class="row mt-0">
                     <div class="col-1"></div>
                     <div class="col-10 d-flex justify-content-center">
                         <!-- <h3 class="display-4" style="font-weight: bold; overflow: hidden;">History</h3><br> -->
                         <!-- <p class="text-justify" style="font-size: 1.25rem;">
-        Bharatvash is an open platform where you can share your thoughts and facts related to the history of The Great Bharatvarsh (India).
-        You can get authentic information about Indian Mytholigies. There are many misunderstanding related to the country, that could be made clear on Bharatvarsh platform. </p> -->
+    Bharatvash is an open platform where you can share your thoughts and facts related to the history of The Great Bharatvarsh (India).
+    You can get authentic information about Indian Mytholigies. There are many misunderstanding related to the country, that could be made clear on Bharatvarsh platform. </p> -->
                     </div>
                     <div class="col-1"></div>
                 </div>
@@ -194,11 +195,11 @@ while ($rows = mysqli_fetch_assoc($result)) {
                                             <div class="col-sm-6 nm">
                                                 <p class="m-b-10 f-w-600 head" style="color:#511616;">Name<img src=" ./assests/id-card.png" style="height:35px;
                                         width:30px; margin-left:20px;margin-top: -10px;"></p>
-                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $user . '</h6>'; ?>
+                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 20px;">' . $user . '</h6>'; ?>
                                             </div>
                                             <div class="col-sm-6 nm1">
                                                 <p class="m-b-10 f-w-600 head" style="color:#511616;">Email<img src="./assests/email.png" style="height:25px;width:30px; margin-left:20px;margin-top: 0px;"></p>
-                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $email . '</h6>'; ?>
+                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 20px;">' . $email . '</h6>'; ?>
                                             </div>
                                         </div><br>
 
@@ -206,7 +207,7 @@ while ($rows = mysqli_fetch_assoc($result)) {
                                             <div class="col-sm-6 nm2">
                                                 <p class="m-b-10 f-w-600 head" style="color:#511616;">UserName<img src="./assests/atr.png" style="height:25px;padding-top:1px;
                                         width:30px; margin-left:10px;margin-top: 3px;"></p>
-                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 18px;">' . $username . '</h6>'; ?>
+                                                <?php echo '<h6 class="text-muted f-w-400" style="font-size: 20px;">' . $username . '</h6>'; ?>
                                             </div>
                                             <div class="col-sm-6 nm3" style="overflow-y: hidden;">
                                                 <p class="m-b-10 f-w-600 head" style="color:#511616;">Blogs Written <img src="./assests/save-button.png" style="height:25px;padding-top:1px;
@@ -230,7 +231,7 @@ while ($rows = mysqli_fetch_assoc($result)) {
                                                         $result2 = mysqli_query($conn, $sql2);
                                                         $num = mysqli_num_rows($result2);
                                                     }
-                                                    echo $i;
+                                                    echo '<h6 class="text-muted f-w-400" style="font-size: 20px;">' . $i . '</h6>';;
                                                     ?>
 
 
@@ -255,7 +256,7 @@ while ($rows = mysqli_fetch_assoc($result)) {
 
     <section class="contain2 mt-5 " id="latest">
         <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold; font-family: 'Texturina', serif;">Blogs Written<i class="fi-cnlrxm-chevron-solid"></i></h3>
-        <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
+        <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
             <div class="container pt-5 pb-4 cov">
                 <div class="row">
 

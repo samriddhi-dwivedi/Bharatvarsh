@@ -146,7 +146,7 @@ if (empty($_SESSION['user_id'])) {
   </section>
 
   <section class="contain2 mt-5" id="latest">
-    <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold; font-family: 'Texturina', serif;">All Articles<i class="fi-cnlrxm-chevron-solid"></i></h3>
+    <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold; font-family: 'amita', serif;">All Articles<i class="fi-cnlrxm-chevron-solid"></i></h3>
     <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
       <div class="container pt-5 pb-4 allarticles">
         <div class="row">
@@ -200,10 +200,10 @@ if (empty($_SESSION['user_id'])) {
                 <div class="card" style="width: 100%; height: 90%;">
                   <img class="card-img-top" src="./uploads/<?php echo $image ?>" alt="Card image cap" height="240px">
                   <div class="card-body card-ki-body">
-                    <h5 class="card-text text-center"><a href="./articlepg.php?id=<?php echo $post_id; ?>"><?php echo $title ?></a></h5>
+                    <h5 class="card-text text-center" style="font-size: 25px !important;"><a href="./articlepg.php?id=<?php echo $post_id; ?>"><?php echo $title ?></a></h5>
 
                   </div>
-                  <p class="card-text text-center"><a href="#">By
+                  <p class="card-text text-center" style="font-size: 20px !important;"><a href="#">By
 
                       <?php
 

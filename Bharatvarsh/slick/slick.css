@@ -106,7 +106,7 @@
 
   margin-left: 46%;
   margin-right: 50%;
-  margin-top: 32%;
+  margin-top: 36%;
   padding: 1rem 0;
 
   list-style-type: none;
@@ -128,9 +128,7 @@
 
 @media only screen and (max-width: 600px) {
   .slick-dots {
-    margin-top: 100%;
-    margin-right: 100%;
-    margin-left: 28%;
+    padding-right: 200vh !important;
   }
 }
 
@@ -161,7 +159,14 @@
 @media only screen and (max-width: 400px) {
   .slick-dots {
     margin-top: 140%;
-    text-align: center;
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 430px) {
+  .slick-dots {
+    margin-top: 120%;
+    margin-left: 12%;
   }
 }
 
@@ -169,7 +174,7 @@
   .slick-dots {
     margin-top: 154%;
     margin-right: 100%;
-    margin-left: 25%;
+    margin-left: 1%;
   }
 }
 .slick-dots li {

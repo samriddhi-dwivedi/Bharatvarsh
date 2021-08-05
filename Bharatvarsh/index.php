@@ -208,9 +208,9 @@ if (isset($_SESSION['email'])) {
 
   <section class="contain" style="margin:40px;margin-top:65px;border-radius: 20px;">
     <div style="padding-top: 2vw;margin-top: 20px;">
-      <div id="home" style="opacity: 0.75;" class="jumb container mt-0 headingg">
+      <div id="home" style="opacity: 0.9;" class="jumb container mt-0 headingg">
 
-        <h1 class="text-center amita ml6 "><span class="text-wrapper">
+        <h1 class="text-center amita ml6 " style="margin-top:10px;"><span class="text-wrapper">
             <span class="letters">Explore The Beauty &nbsp; Of &nbsp;Bharatvarsh </span>
           </span></h1>
 
@@ -242,7 +242,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <div class="col-lg-3 col-6 d-flex justify-content-center foo">
           <div class="card mainsec">
-            <img class="card-img-top categ" src="./assests/food.jpg" alt="Card image cap" height="250px">
+            <img class="card-img-top categ mobile" src="./assests/food.jpg" alt="Card image cap" height="250px">
             <div class="card-body">
               <a href="category.php?class=food">
                 <h5 class="card-text">Food</h5>
@@ -269,7 +269,7 @@ if (isset($_SESSION['email'])) {
 
   <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;background-color: white;margin-top: 100px;margin-bottom: 20px;">About <i class="fi-cnlrxm-chevron-solid"></i></h3>
 
-  <section style="background: rgba(233, 173, 120, 0.46);margin-bottom: 250px; padding: 50px;">
+  <section style="background: rgba(233, 173, 120, 0.46);margin-bottom: 250px; padding: 50px;box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
 
     <div class="container">
       <div class="row" style="overflow-y: hidden;">
@@ -280,7 +280,6 @@ if (isset($_SESSION['email'])) {
 
     </div>
     <h2 id="s3"></h2>
-
   </section>
 
 
@@ -291,7 +290,7 @@ if (isset($_SESSION['email'])) {
 
 
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">Latest Updates <i class="fi-cnlrxm-chevron-solid"></i></h3>
-    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);overflow-y:hidden;">
+    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);overflow-y:hidden;box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
       <div class="container-fluid pt-5 pb-5" style="overflow-y: hidden;">
 
         <i class="fas fa-chevron-left pre"></i>
@@ -320,7 +319,7 @@ if (isset($_SESSION['email'])) {
               <div class="card" style="width: 100%; height: 90%;">
                 <img class="card-img-top" src="./uploads/<?php echo $image ?>" alt="Card image cap" height="240px">
                 <div class="card-body card-ki-body">
-                  <h5 class="card-text text-center"><a href="./articlepg.php?id=<?php echo $rows['post_id']; ?>"><?php echo $title ?></a></h5>
+                  <h5 class="card-text text-center" style="font-size: 25px !important;"><a href="./articlepg.php?id=<?php echo $rows['post_id']; ?>"><?php echo $title ?></a></h5>
 
                 </div>
                 <?php
@@ -332,7 +331,7 @@ if (isset($_SESSION['email'])) {
 
 
                 ?>
-                <p class="card-text text-center"><a href="./profile.php?user=<?php echo $user ?>">By
+                <p class="card-text text-center" style="font-size: 20px !important;"><a href="./profile.php?user=<?php echo $user ?>">By
 
                     <?php
                     echo $user;
@@ -375,7 +374,7 @@ if (isset($_SESSION['email'])) {
 
   <section class="contain2 mt-5 mp" id="popular">
     <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">Most Popular <i class="fi-cnlrxm-chevron-solid"></i></h3>
-    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);">
+    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
       <div class="container-fluid pt-5 pb-5" style="overflow-y: hidden;">
 
         <i class="fas fa-chevron-left prev"></i>
@@ -404,10 +403,10 @@ if (isset($_SESSION['email'])) {
               <div class="card" style="width: 100%; height: 90%;">
                 <img class="card-img-top" src="./uploads/<?php echo $image ?>" alt="Card image cap" height="240px">
                 <div class="card-body card-ki-body">
-                  <h5 class="card-text text-center"><a href="./articlepg.php?id=<?php echo $rows['post_id']; ?>"><?php echo $title ?></a></h5>
+                  <h5 class="card-text text-center" style="font-size: 25px !important;"><a href="./articlepg.php?id=<?php echo $rows['post_id']; ?>"><?php echo $title ?></a></h5>
 
                 </div>
-                <p class="card-text text-center"><a href="#">By
+                <p class="card-text text-center" style="font-size: 20px !important;"><a href="./profile.php?user=<?php echo $user ?>">By
 
                     <?php
 
@@ -443,6 +442,88 @@ if (isset($_SESSION['email'])) {
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
+  <section class="contain2 mt-5 mp" id="popular">
+    <h3 class="display-4 pl-5 pl-md-5" style="font-weight: bold;">All Blogs <i class="fi-cnlrxm-chevron-solid"></i></h3>
+    <div class="mt-5" style="background: rgba(233, 173, 120, 0.46);box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);">
+      <div class="container-fluid pt-5 pb-5" style="overflow-y: hidden;">
+
+        <div class="row mx-0 ddd" style="padding-bottom: 60px;overflow-y: hidden;">
+
+
+          <?php
+          $j = 0;
+          $blogcount = 0;
+          $sql = "select * from posts WHERE approval=1 ORDER BY likes DESC";
+          $result = mysqli_query($conn, $sql) or die("Query Failed");
+
+          while ($rows = mysqli_fetch_assoc($result)) {
+            $j++;
+            $blogcount++;
+            $title = $rows['title'];
+            $readtime = $rows['readtime'];
+            $content = $rows['content'];
+            $image = $rows['image'];
+            $user_id = $rows['user_id'];
+
+          ?>
+
+
+            <div class="col-lg-3 col-sm-5 col-11 text-white inl">
+              <div class="card" style="width: 100%; height: 90%;">
+                <img class="card-img-top" src="./uploads/<?php echo $image ?>" alt="Card image cap" height="240px">
+                <div class="card-body card-ki-body">
+                  <h5 class="card-text text-center" style="font-size: 25px !important;"><a href="./articlepg.php?id=<?php echo $rows['post_id']; ?>"><?php echo $title ?></a></h5>
+
+                </div>
+                <p class="card-text text-center" style="font-size: 20px !important;"><a href="./profile.php?user=<?php echo $user ?>">By
+
+                    <?php
+
+                    $sql1 = "SELECT user FROM users WHERE user_id={$user_id}";
+                    $result2 = mysqli_query($conn, $sql1) or die("Query Failed");
+                    $row = mysqli_fetch_assoc($result2);
+                    $user = $row['user'];
+
+                    echo $user;
+                    ?>
+
+
+                  </a></p>
+              </div>
+            </div>
+
+
+          <?php
+          }
+
+          ?>
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
   <h2 id="s5"></h2><br>
   <div class="mt-5" id="joinus" style="overflow-y: hidden;">
     <div class="container cu">
@@ -501,10 +582,10 @@ if (isset($_SESSION['email'])) {
       $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
 
       $('.x').toggleClass('scrolled', $(this).scrollTop() > 850);
-      $('.x').toggleClass('ret', $(this).scrollTop() > 1800);
+      $('.x').toggleClass('ret', $(this).scrollTop() > 1700);
 
 
-      $('.x1').toggleClass('scrolled', $(this).scrollTop() > 1800);
+      $('.x1').toggleClass('scrolled', $(this).scrollTop() > 1700);
       $('.x1').toggleClass('ret', $(this).scrollTop() > 2600);
 
       $('.x2').toggleClass('scrolled', $(this).scrollTop() > 2600);
@@ -542,7 +623,7 @@ if (isset($_SESSION['email'])) {
         slidesToShow: <?php echo $i; ?>,
         slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: $(".nex"),
         prevArrow: $(".pre"),
         responsive: [{
@@ -584,7 +665,7 @@ if (isset($_SESSION['email'])) {
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: $(".nex"),
         prevArrow: $(".pre"),
         responsive: [{
@@ -641,7 +722,7 @@ if (isset($_SESSION['email'])) {
         slidesToShow: <?php echo $j; ?>,
         slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: $(".next"),
         prevArrow: $(".prev"),
         responsive: [{
@@ -683,7 +764,7 @@ if (isset($_SESSION['email'])) {
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: $(".next"),
         prevArrow: $(".prev"),
         responsive: [{

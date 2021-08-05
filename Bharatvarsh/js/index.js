@@ -1,7 +1,4 @@
- 
 var animate = ScrollReveal();
-
- 
 
 animate.reveal(".ml6", {
   delay: 1000,
@@ -9,7 +6,6 @@ animate.reveal(".ml6", {
   duration: 1500,
   distance: "100px",
 });
-
 
 animate.reveal(".ppl", {
   delay: 1000,
@@ -24,9 +20,9 @@ animate.reveal(".plc", {
   duration: 1500,
   distance: "100px",
 });
- 
+
 animate.reveal(".foo", {
-  mobile:false,
+  mobile: false,
   delay: 1400,
   origin: "left",
   duration: 1500,
@@ -34,7 +30,7 @@ animate.reveal(".foo", {
 });
 
 animate.reveal(".ins", {
-  mobile:false,
+  mobile: false,
   delay: 1600,
   origin: "left",
   duration: 1500,
@@ -42,26 +38,20 @@ animate.reveal(".ins", {
 });
 
 animate.reveal(".foo", {
-  desktop:false,
+  desktop: false,
   delay: 0,
   origin: "left",
   duration: 1500,
   distance: "100px",
 });
- 
 
 animate.reveal(".ins", {
-  desktop:false,
+  desktop: false,
   delay: 0,
   origin: "left",
   duration: 1500,
   distance: "100px",
 });
-
- 
-
-
-
 
 animate.reveal(".pl-md-5", {
   delay: 0,
